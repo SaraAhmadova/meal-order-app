@@ -1,0 +1,25 @@
+.bannerCard{
+    border-radius: 15px;
+    width: 50%;
+    margin: -80px auto 60px;
+    background: rgb(99, 164, 29);
+    padding: 20px;
+    position: relative;
+    box-shadow: 0px 10px 10px 0px #0000007d
+}
+.bannerCard::after{
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: -3%;
+    z-index: -1;
+    height: 100%;
+    width: 106%;
+    background-color: rgb(68, 130, 5);
+    border-radius: 15px;
+}
+.bannerCard p{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+}

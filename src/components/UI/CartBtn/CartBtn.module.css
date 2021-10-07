@@ -1,0 +1,37 @@
+.cart-btn{
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.306);
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    transition: .4s;
+}
+
+.cart-btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.455);
+}
+
+.cart-icon path{
+    fill: #fff !important;
+}
+.cart-btn span{
+    margin: 0 5px;
+}
+
+.badge{
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    border-radius: 14px;
+    padding: 5px 10px;
+    font-size: 12px;
+    background: #fff;
+    color: rgb(16, 152, 16);
+}
