@@ -30,27 +30,27 @@ const Meals = props => {
         },
         {
             id: 'm4',
-            name: "Sezar Salad",
-            description: "Fine healthy salad",
+            name: "Tom Yum Soup",
+            description: "Traditional Soup with Thai herbs",
             price: 14.50
         },
         {
             id: 'm5',
-            name: "Schnitzel",
-            description: "Fine German meal",
-            price: 22.99
+            name: "Jasmine Rice",
+            description: "Meal with delicate floral and buttery scent",
+            price: 4.50
         },
         {
             id: 'm6',
-            name: "Sushi",
-            description: "Finest fish and veggies",
-            price: 20.50
+            name: "Thai Basil",
+            description: "With green beans, bamboo shoots and onion.",
+            price: 25.90
         },
         {
             id: 'm7',
-            name: "Sezar Salad",
-            description: "Fine healthy salad",
-            price: 14.50
+            name: "Fresh Ginger",
+            description: "With onion, carrot and market fresh vegetables.",
+            price: 24.50
         }
     ]
 

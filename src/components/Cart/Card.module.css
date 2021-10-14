@@ -1,0 +1,88 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.cartItems{
+    max-height: 300px;
+    overflow-y: auto;
+}
+.cartItems::-webkit-scrollbar{
+    width: 7px;
+    background-color: #ddd;
+    border-radius: 7px;
+}
+.cartItems::-webkit-scrollbar-thumb{
+    background-color: rgb(99, 164, 29);
+    border-radius: 7px;
+}
+.bottom h2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    /* border-bottom: 2px solid rgb(99, 164, 29); */
+}
+.btn-area{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-area button{
+    /* width: 80px; */
+    transition: all .7s;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    margin: 0 7px;
+    cursor: pointer;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.btn-area button:hover{
+    background-color: rgb(39, 71, 5);
+    border-color: rgb(39, 71, 5);
+    color: #fff;
+}
+.btn-area .btn{
+    background-color: rgb(99, 164, 29);
+    color: #fff;
+    border: 2px solid rgb(99, 164, 29);
+
+}
+
+.btn-area .btn-alt{
+    color: rgb(99, 164, 29);
+    border: 2px solid rgb(99, 164, 29);
+    background-color: transparent;
+}
+
+.mealAmount{
+    display: flex;
+    align-items: center;
+}
+.mealAmount h5{
+    margin: 0 7px!important;
+}
+.mealAmount button{
+    height: 30px;
+    width: 35px;
+    font-size: 18px;
+    margin: 0 5px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: .3s;
+}
+.mealAmount button:hover{
+    background-color: rgb(99, 164, 29);
+    border-color: rgb(99, 164, 29);
+    color: #fff;
+}
+.meal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(99, 164, 29);
+}

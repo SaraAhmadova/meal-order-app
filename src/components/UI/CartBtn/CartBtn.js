@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
+import CartContext from "../../../store/CartContext";
 import style from "./CartBtn.module.css";
 
 const CartIcon = () => {
@@ -14,16 +15,27 @@ const CartIcon = () => {
   );
 };
 
-const CartBtn = () => {
-  const clc = () => {
-    console.log("yeap");
-  };
+const CartBtn = (props) => {
+  const cartCtx = useContext(CartContext);
+  const itemCount = cartCtx.items.reduce((curVal, item) => {
+    return (curVal += item.amount);
+  }, 0);
+  const [btnBump, setBtnBump] = useState(false);
+  useEffect(() => {
+    setBtnBump(true);
+    setTimeout(() => {
+      setBtnBump(false);
+    }, 300);
+  }, [cartCtx.items]);
   return (
-    <button className={style["cart-btn"]} onClick={clc}>
+    <button
+      className={`${style["cart-btn"]} ${btnBump ? style["btn-bump"] : ""}`}
+      onClick={props.onClick}
+    >
       <span>
         <CartIcon />
       </span>
-      <span className={style.badge}>3</span>
+      <span className={style.badge}>{itemCount || 0}</span>
     </button>
   );
 };

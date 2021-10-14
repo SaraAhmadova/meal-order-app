@@ -1,35 +1,15 @@
-.mealCard{
-    width: 23%;
-    margin: 10px 0;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    background-image: linear-gradient(rgb(99, 164, 29), rgb(209, 243, 174));
-    box-shadow: rgba(66, 74, 66, 0.238) 0px 7px 29px 0px;
-    color: #fff;
+.mealCard {
+  width: 23%;
+  margin: 10px 0;
+  padding: 25px 25px 160px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: rgb(99, 164, 29);
+  box-shadow: rgba(66, 74, 66, 0.238) 0px 7px 29px 0px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
 }
-
-.bottomBar{
-    display: flex;
-    justify-content: space-between;
-}
-
-.mealCount{
-    width: 50px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-}
-
-.addCart{
-    border-radius: 15px;
-    padding: 10px 10px;
-    margin-top: 15px;
-    width: 100%;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-weight: 500;
-    background: rgb(99, 164, 29);
+.mealCard h1{
+  margin-top: 7px;
 }

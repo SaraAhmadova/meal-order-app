@@ -12,7 +12,9 @@
     position: relative;
     transition: .4s;
 }
-
+.btn-bump{
+    animation: bump .4s;
+}
 .cart-btn:hover{
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0.455);
@@ -35,3 +37,13 @@
     background: #fff;
     color: rgb(16, 152, 16);
 }
+
+@keyframes bump {
+    from {
+      transform:  scale(1);
+    }
+  
+    to {
+     transform: scale(1.1);
+    }
+  }
